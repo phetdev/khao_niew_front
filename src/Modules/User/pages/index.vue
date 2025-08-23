@@ -41,7 +41,6 @@
 
     <a-form-item>
       <a-button :disabled="disabled" type="primary" html-type="submit" class="login-form-button"  style="width: 100%;">
->
         Log in
       </a-button>
     </a-form-item>
