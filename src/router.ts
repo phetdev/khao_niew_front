@@ -1,11 +1,20 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Catty from "./catty.vue";
 import { routerAuth } from "./Modules/User/router";
+import layout from "./layout.vue"
 const routes = [
     {
-        path:'/a',
-        name:'a',
-        component:Catty
+        path: '/a',
+        name: 'a',
+        component: Catty
+    },
+    {
+        path: '/layout',
+        name: 'layout',
+        component: layout,
+        children: [
+            
+        ]
     },
     ...routerAuth,
 ]
