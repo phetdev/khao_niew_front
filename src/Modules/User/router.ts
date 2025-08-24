@@ -1,9 +1,9 @@
-import LoginPage from './pages/index.vue';
-export const routerAuth = [
+import User from './pages/index.vue'
+export const routerUser = [
     {
-        path: '/login',
-        naem: 'login',
-        component: LoginPage
+        path: '/user',
+        naem: 'user',
+        component: User
     },
 
 ]

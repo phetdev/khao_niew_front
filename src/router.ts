@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Catty from "./catty.vue";
-import { routerAuth } from "./Modules/User/router";
-import layout from "./layout.vue"
+import { routerAuth } from "./Modules/Auth/router";
+import {routerUser} from "./Modules/User/router"
+import layout from "./Layouts/layout.vue"
 const routes = [
     {
         path: '/a',
@@ -17,6 +18,7 @@ const routes = [
         ]
     },
     ...routerAuth,
+    ...routerUser,
 ]
 export const router = createRouter({
     history: createWebHistory(),
